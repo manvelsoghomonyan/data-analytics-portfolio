@@ -1,0 +1,464 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Ensure sections fill the entire height of the screen */
+section {
+    min-height: 100vh; /* Makes sure each section fills at least the full screen height */
+}
+
+/* Menu Bar (Navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 5px 10px;
+    z-index: 1000; /* Ensure navbar is on top */
+    height: 40px; /* Adjust height for better spacing */
+}
+
+.nav-logo h2 {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6347; /* Hover effect color */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("assets/images/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Make it full viewport height */
+    display: flex;
+    justify-content: flex-end; /* Align text to the right */
+    align-items: center;
+    color: white;
+    padding-right: 50px; /* Add padding to the right for spacing */
+    text-align: right; /* Align text to the right */
+}
+
+.hero .hero-content {
+    max-width: 600px; /* Optional: Limit text width */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.hero p {
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll Button */
+.scroll-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent; /* Original background color */
+    color: white; /* Text color on normal state */
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 1.1em;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adding transition to text color */
+}
+
+.scroll-button:hover {
+    background-color: transparent; /* Darker blue on hover */
+    color: #0072c6; /* Ensuring the text stays white on hover */
+    border-color: #0072c6;
+}
+
+/* Button Style in Hero Section */
+.hero .btn {
+    display: inline-block;
+    padding: 15px 30px; /* Adjust button size */
+    border: 2px solid white; /* White frame */
+    color: white; /* White text */
+    background-color: transparent; /* Transparent background */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition only for border and text color */
+}
+
+/* Hero Section Button Hover Effect */
+.hero .btn:hover {
+    color: #0072c6; /* Blue text */
+    border-color: #0072c6; /* Blue border */
+}
+
+/* General Button Styles */
+.btn {
+    display: inline-block;
+    padding: 15px 30px; /* Adjust button size */
+    border: 1px solid black; /* Black frame */
+    color: black; /* Black text */
+    background-color: transparent; /* Transparent background */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1px;
+    transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition only for border and text color */
+}
+
+.btn:hover {
+    color: #0072c6; /* Blue text */
+    border-color: #0072c6; /* Blue border */
+}
+
+/* Button in Projects Section */
+.project-btn {
+    margin-top: 10px; /* Keep the margin */
+    width: auto; /* Remove the fixed 90% width to allow better flexibility */
+    text-align: center; /* Center-align the text */
+    display: inline-block; /* Ensure proper button alignment */
+    padding: 10px 20px; /* Adjust padding for button size */
+    border: 2px solid black; /* Black frame */
+    color: black; /* Black text */
+    background-color: transparent; /* Transparent background */
+    font-size: 1em; /* Keep the font size */
+    font-weight: bold; /* Bold text for emphasis */
+    border-radius: 5px; /* Rounded corners for a clean look */
+    transition: border-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.project-btn:hover {
+    border-color: #0072c6; /* Blue border on hover */
+    color: #0072c6; /* Blue text on hover */
+}
+
+/* Project Page Buttons */
+.project-page-btn {
+    margin: 20px auto; /* Center the button */
+    display: block;
+    max-width: 300px; /* Limit width */
+}
+
+/* Thumbnail Styling */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    flex: 1 1 calc(25% - 20px); /* Adjust for 4 per row */
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.project p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make it fill the entire screen */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff; /* Optional: Add border around the image */
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.text-container p {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc; /* BMW Blue */
+}
+
+a:hover {
+    color: #004a99; /* Darker blue on hover */
+}
+
+/* Contact Section */
+#contact {
+    min-height: 100vh; /* Ensure the contact section spans the full height */
+    background-image: url("assets/images/contact-background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Right Half of the Page for Contact Content */
+.contact-content {
+    width: 50%; /* Take up the right half of the page */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    color: white;
+    position: absolute; /* Position content on the right side */
+    right: 0; /* Align content to the right */
+    padding-right: 50px; /* Optional: adds some padding to the right */
+    transform: translateY(-150px); /* Move content higher */
+}
+
+/* Contact Me Title */
+.contact-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Contact Icons */
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center icons horizontally */
+    margin-top: 20px;
+}
+
+.contact-icon {
+    width: 30px; /* Make icons smaller */
+    height: 30px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Apply transition for smooth effect */
+}
+
+/* Hover Effect on Icons */
+.contact-icon:hover {
+    transform: scale(1.2); /* Scale the icon slightly */
+    color: #ff6347; /* Change color on hover (can be any color) */
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 20px; /* Adjust padding for better spacing */
+    min-height: 100vh; /* Ensure section spans the viewport height */
+    background-color: #f5f5f5;
+}
+
+/* Fix for hiding title */
+#projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add spacing between project cards */
+    justify-content: center;
+}
+
+.project {
+    flex: 1 1 calc(25% - 20px); /* 4 projects per row, responsive */
+    max-width: 300px;
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Project Image */
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Project Title */
+.project p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Hover Effect for Project Card */
+.project:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Page Center Alignment */
+.project-details {
+    font-size: 100%; /* Reset scaling inheritance */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Screenshot Gallery */
+.screenshot-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Improved spacing */
+    justify-content: center;
+    margin: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.screenshot-gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow to images */
+}
+/* Adjust text to match the same width as screenshot gallery */
+.project-details p {
+    font-size: 1em; /* Match About section */
+    line-height: 1.6; /* Match About section */
+    margin-bottom: 5px; /* Match spacing */
+    color: #555; /* Match text color */
+}
+
+/* General Styling for Lists in Project Pages */
+.project-details ul {
+    list-style-type: disc; /* Use bullet points for lists */
+    margin-left: 20px; /* Add indentation for better readability */
+    padding-left: 20px;
+    color: #555; /* Match text color */
+    font-size: 1em; /* Match paragraph font size */
+    line-height: 1.6; /* Improve readability */
+}
+
+.project-details ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+/* Styling for Bold Text (Strong Tags) */
+.project-details p strong {
+    color: #333; /* Darker color for emphasis */
+    font-weight: bold;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons-container .btn {
+    padding: 5px 10px;
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons-container .btn:hover {
+    border-color: #0072c6;
+    color: #0072c6;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

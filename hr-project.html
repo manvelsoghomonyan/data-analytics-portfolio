@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HR Employee Attrition</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html#top"><h2>Manvel Soghomonyan</h2></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li>
+                    <a
+                        href="assets/Manvel_Soghomonyan_Resume.pdf"
+                        target="_blank"
+                        >Resume</a
+                    >
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Project Details Section -->
+        <section id="hr-project" class="project-page">
+            <div class="project-details">
+                <div>
+                    <h2>HR Employee Attrition</h2>
+                    <!-- Project Summary -->
+                    <p><strong>Purpose:</strong></p>
+                        <p>
+                            This report delivers a comprehensive analysis of employee
+                            attrition, uncovering the reasons behind turnover and proposing
+                            actionable strategies to mitigate it.
+                        </p>
+                    <p><strong>Key Objectives:</strong></p>
+                    <ul>
+                        <li>Analyze the root causes of employee attrition through statistical methods and employee feedback.</li>
+                        <li>Identify departments, roles, and employee demographics most impacted by attrition.</li>
+                        <li>Propose targeted strategies to enhance retention and reduce turnover.</li>
+                    </ul>
+                    <p><strong>Description:</strong></p>
+                        <p>
+                            The analysis segmented employees based on department, job role, and tenure,
+                            uncovering attrition trends and temporal patterns. By calculating attrition
+                            rates and employing statistical methods, the report identified critical factors
+                            contributing to turnover. Insights revealed were instrumental in guiding
+                            strategies to improve employee satisfaction, stabilize retention, and drive
+                            organizational growth.
+                        </p>
+                    <!-- Key Findings and Strategies -->
+                    <p><strong>Key Findings and Proposed Strategies:</strong></p>
+                    <ul>
+                        <li><strong>High Attrition Among Male Employees:</strong> Conduct focus groups or surveys to identify specific issues. Introduce targeted retention programs, such as mentorship or leadership training.</li>
+                        <li><strong>High Attrition Among Single Employees:</strong> Address unique needs with flexible schedules, wellness programs, and community-building activities.</li>
+                        <li><strong>High Attrition Among Master’s Degree Holders:</strong> Create career advancement opportunities and leadership development programs.</li>
+                        <li><strong>High Attrition in the Sales Department:</strong> Enhance job satisfaction with competitive compensation, workload adjustments, and sales training.</li>
+                        <li><strong>High Attrition Among Laboratory Technicians:</strong> Develop career progression plans and offer cross-training or skill development opportunities.</li>
+                        <li><strong>Low Job Satisfaction Equals High Attrition:</strong> Use satisfaction surveys to identify and resolve specific issues, such as workload or recognition.</li>
+                        <li><strong>Low Relationship Satisfaction Equals High Attrition:</strong> Foster workplace relationships with team-building activities and conflict resolution training.</li>
+                        <li><strong>Low Work-Life Balance Equals High Attrition:</strong> Implement flexible work arrangements, wellness initiatives, and balanced workloads.</li>
+                        <li><strong>Business Travel and Attrition:</strong> Provide travel opportunities for non-traveling employees and address other potential concerns.</li>
+                        <li><strong>Overtime and Attrition:</strong> Adjust workloads, consider additional staffing, or automate processes to reduce overtime.</li>
+                        <li><strong>Compensation and Retention:</strong> Ensure competitive pay packages and offer performance-based incentives to retain employees.</li>
+                    </ul>
+
+                    <p><strong>Insights Impact:</strong></p>
+                        <p>
+                        This report provided actionable strategies to address critical areas of concern, resulting in
+                        improved job satisfaction, enhanced employee retention, and long-term organizational stability.
+                    </p>
+                    <p><strong>Visualization:</strong></p>                    
+                </div>
+
+                    <!-- Screenshot Gallery -->
+                <div class="screenshot-gallery">                        
+                    <img
+                        src="assets/images/hr-attrition/hr-1.JPG"
+                        alt="Dashboard Screenshot Page 1"
+                    />
+                    <img
+                        src="assets/images/hr-attrition/hr-2.JPG"
+                        alt="Dashboard Screenshot Page 2"
+                    />
+                    <img
+                        src="assets/images/hr-attrition/hr-3.JPG"
+                        alt="Dashboard Screenshot Page 3"
+                    />
+                    <img
+                        src="assets/images/hr-attrition/hr-4.JPG"
+                        alt="Dashboard Screenshot Page 4"
+                    />
+                    <img
+                        src="assets/images/hr-attrition/hr-5.JPG"
+                        alt="Dashboard Screenshot Page 5"
+                    />
+                    <img
+                        src="assets/images/hr-attrition/hr-6.JPG"
+                        alt="Dashboard Screenshot Page 6"
+                    />
+                </div>
+
+                    <!-- Buttons -->
+                <div class="buttons-container">
+                    <a
+                        href="https://app.powerbi.com/reportEmbed?reportId=0204ae95-ee47-4916-a991-e7f470643260&autoAuth=true&ctid=10ad09bc-5660-4dc7-82c1-2c8ab0f292b0"
+                        target="_blank"
+                        class="btn"
+                        >Open in Power BI</a
+                    >
+                    <a href="index.html#projects" class="btn"
+                        >Back to Projects</a
+                    >
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <script>
+            // Sticky Buttons Visibility Control Script
+            document.addEventListener("scroll", function () {
+                const stickyButtons = document.querySelector(".sticky-buttons");
+
+                if (window.scrollY > 200) {
+                    stickyButtons.classList.add("visible"); // Show buttons when scrolled down
+                } else {
+                    stickyButtons.classList.remove("visible"); // Hide buttons when at top
+                }
+            });
+        </script>
+    </body>
+</html>

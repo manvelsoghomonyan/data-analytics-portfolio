@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Diabetes Patients Analysis</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html#top"><h2>Manvel Soghomonyan</h2></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li>
+                    <a
+                        href="assets/Manvel_Soghomonyan_Resume.pdf"
+                        target="_blank"
+                        >Resume</a
+                    >
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Project Details Section -->
+        <section id="hr-project" class="project-page">
+            <div class="project-details">
+                <div>
+                    <h2>Diabetes Patients Analysis</h2>
+                    <!-- Project Summary -->
+                    <p><strong>Purpose:</strong></p>
+                    <p>
+                        This analysis provides a comprehensive examination of a
+                        diabetes dataset, focusing on uncovering patterns and
+                        insights without constructing a predictive model.
+                    </p>
+
+                    <p><strong>Key Objectives:</strong></p>
+                    <ul>
+                        <li>
+                            Understand the dataset's structure, characteristics,
+                            and variables.
+                        </li>
+                        <li>
+                            Explore key trends and insights related to diabetes
+                            patients and their diagnostic measurements.
+                        </li>
+                        <li>
+                            Identify significant patterns or associations that
+                            could inform healthcare practices.
+                        </li>
+                        <li>
+                            Offer data-driven insights to assist healthcare
+                            professionals in early diagnosis and patient care.
+                        </li>
+                        <li>
+                            Provide a foundational analysis to support further
+                            research and decision-making for diabetes
+                            management.
+                        </li>
+                    </ul>
+
+                    <p><strong>Description:</strong></p>
+                    <ul>
+                        <li>
+                            <strong>Data Exploration:</strong> Ensured data
+                            quality through checks for missing values and an
+                            understanding of variable distributions.
+                        </li>
+                        <li>
+                            <strong>Feature Selection:</strong> Identified
+                            significant variables using correlation analysis and
+                            feature importance techniques.
+                        </li>
+                        <li>
+                            <strong>Data Preprocessing:</strong> Addressed
+                            missing values, applied feature scaling, and encoded
+                            categorical variables to prepare the dataset for
+                            analysis.
+                        </li>
+                        <li>
+                            <strong>Exploratory Data Analysis (EDA):</strong>
+                            Leveraged visualizations and statistical tools to
+                            uncover patterns and trends within diagnostic
+                            measurements.
+                        </li>
+                        <li>
+                            <strong>Insights and Recommendations:</strong>
+                            Focused on actionable insights rather than
+                            predictions, highlighting relationships between
+                            diagnostic measurements and diabetes, aiding
+                            healthcare professionals in early detection and
+                            improved patient care.
+                        </li>
+                    </ul>
+
+                    <!-- Key Takeaways -->
+                    <p><strong>Key Takeaways:</strong></p>
+                    <p>
+                        This foundational analysis provided valuable insights
+                        into the relationships between diagnostic factors and
+                        diabetes, offering healthcare practitioners a deeper
+                        understanding of patient diagnostics. It also sets the
+                        stage for further research, interventions, and strategic
+                        decisions in diabetes management.
+                    </p>
+                    <p><strong>Visualization:</strong></p>
+                </div>
+
+                <!-- Screenshot Gallery -->
+                <div class="screenshot-gallery">
+                    <img
+                        src="assets/images/diabetes-patients/diabetes-1.JPG"
+                        alt="Dashboard Screenshot Page 1"
+                    />
+                    <img
+                        src="assets/images/diabetes-patients/diabetes-2.JPG"
+                        alt="Dashboard Screenshot Page 2"
+                    />
+                </div>
+
+                <!-- Buttons -->
+                <div class="buttons-container">
+                    <a
+                        href="https://app.powerbi.com/reportEmbed?reportId=2cb916d7-89fe-4820-97c1-2f383e303ffa&autoAuth=true&ctid=10ad09bc-5660-4dc7-82c1-2c8ab0f292b0"
+                        target="_blank"
+                        class="btn"
+                        >Open in Power BI</a
+                    >
+                    <a href="index.html#projects" class="btn"
+                        >Back to Projects</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Sticky Buttons Visibility Control Script
+            document.addEventListener("scroll", function () {
+                const stickyButtons = document.querySelector(".sticky-buttons");
+
+                if (window.scrollY > 200) {
+                    stickyButtons.classList.add("visible"); // Show buttons when scrolled down
+                } else {
+                    stickyButtons.classList.remove("visible"); // Hide buttons when at top
+                }
+            });
+        </script>
+    </body>
+</html>

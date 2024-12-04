@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Manvel Soghomonyan - Data Analyst Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Link to the CSS file -->
+    </head>
+    <body id="top">
+        <!-- Menu Bar -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#top"><h2>Manvel Soghomonyan</h2></a>
+                <!-- Make the logo a clickable link -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li>
+                    <a
+                        href="assets/Manvel_Soghomonyan_Resume.pdf"
+                        target="_blank"
+                        >Resume</a
+                    >
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Hi! I'm Manvel Soghomonyan</h1>
+                <p>
+                    A skilled data analyst with expertise in SQL, Power BI,
+                    Python, and more
+                </p>
+                <!-- Scroll-to-About button -->
+                <a href="#about" class="scroll-button">About Me</a>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="image-container">
+                    <img
+                        src="assets/images/Manvel.jpg"
+                        alt="Manvel Soghomonyan"
+                        class="profile-image"
+                    />
+                </div>
+                <div class="text-container">
+                    <p>
+                        I’m a data analyst with a strong background in
+                        transforming raw data into valuable insights. I hold
+                        certifications from Google, Microsoft, and top
+                        universities like the University of Pennsylvania.
+                        Currently, as a Customer Analytics Specialist, I use
+                        SQL, Power BI, and Python to deliver data-driven
+                        solutions.
+                    </p>
+                    <p>
+                        Welcome to my portfolio—explore my projects and see how
+                        I help organizations succeed in a data-driven world.
+                    </p>
+                    <p>
+                        Email:
+                        <a href="mailto:manvel.soghomonyan@gmail.com"
+                            >manvel.soghomonyan@gmail.com</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <!-- First Project -->
+                <div class="project">
+                    <p>LEGO Set Explorer Dashboard</p>
+                    <a href="lego-project.html">
+                        <img
+                            src="assets/images/lego/lego-dashboard-thumbnail.JPG"
+                            alt="LEGO Set Explorer Dashboard"
+                        />
+                    </a>
+                    <a
+                        href="https://app.powerbi.com/reportEmbed?reportId=3c95d1ff-84d5-424e-9622-0e1b0f168efc&autoAuth=true&ctid=10ad09bc-5660-4dc7-82c1-2c8ab0f292b0"
+                        target="_blank"
+                        class="btn project-btn"
+                        >Open in Power BI</a
+                    >
+                </div>
+
+                <div class="project">
+                    <p>HR Employee Attrition</p>
+                    <a href="hr-project.html">
+                        <img
+                            src="assets/images/hr-attrition/hr-attrition-thumbnail.JPG"
+                            alt="HR Employee Attrition"
+                        />
+                    </a>
+                    <a
+                        href="https://app.powerbi.com/reportEmbed?reportId=0204ae95-ee47-4916-a991-e7f470643260&autoAuth=true&ctid=10ad09bc-5660-4dc7-82c1-2c8ab0f292b0"
+                        target="_blank"
+                        class="btn project-btn"
+                        >Open in Power BI</a
+                    >
+                </div>
+
+                <div class="project">
+                    <p>Diabetes Patients Analysis</p>
+                    <a href="diabetes-project.html">
+                        <img
+                            src="assets/images/diabetes-patients/diabetes-patients-thumbnail.JPG"
+                            alt="Diabetes Patients Analysis"
+                        />
+                    </a>
+                    <a
+                        href="https://app.powerbi.com/reportEmbed?reportId=2cb916d7-89fe-4820-97c1-2f383e303ffa&autoAuth=true&ctid=10ad09bc-5660-4dc7-82c1-2c8ab0f292b0"
+                        target="_blank"
+                        class="btn project-btn"
+                        >Open in Power BI</a
+                    >
+                </div>
+
+                <!-- Add future projects here -->
+                <!-- Just add new "div.project" blocks for each project -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact-content">
+                <h2>Contact Me</h2>
+                <div class="contact-icons">
+                    <a
+                        href="https://www.linkedin.com/in/manvelsoghomonyan/"
+                        target="_blank"
+                    >
+                        <img
+                            src="assets/images/linkedin-icon.png"
+                            alt="LinkedIn"
+                            class="contact-icon"
+                        />
+                    </a>
+                    <a href="mailto:manvel.soghomonyan@gmail.com">
+                        <img
+                            src="assets/images/email-icon.png"
+                            alt="Email"
+                            class="contact-icon"
+                        />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Sections (Projects, Resume, Contact) -->
+        <!-- Add your Projects, Resume, and Contact sections here -->
+
+        <script>
+            // Smooth scroll effect for the navigation with offset
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href")
+                    );
+                    const offset =
+                        document.querySelector(".navbar").offsetHeight; // Get the navbar's height dynamically
+                    const targetPosition = target.offsetTop - offset; // Adjust position by the navbar's height
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: "smooth",
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

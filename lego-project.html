@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LEGO Set Explorer Dashboard</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html#top"><h2>Manvel Soghomonyan</h2></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li>
+                    <a
+                        href="assets/Manvel_Soghomonyan_Resume.pdf"
+                        target="_blank"
+                        >Resume</a
+                    >
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Project Details Section -->
+        <section id="lego-project" class="project-page">
+            <div class="project-details">
+                <h2>LEGO Set Explorer Dashboard</h2>
+                <p>
+                    This dashboard provides insights into LEGO sets, including
+                    trends, themes, and part inventories. The interactive
+                    visualization allows users to explore data for specific
+                    years and LEGO themes.
+                </p>
+
+                <!-- Screenshot Gallery -->
+                <div class="screenshot-gallery">
+                    <img
+                        src="assets/images/lego/Lego-1.JPG"
+                        alt="Dashboard Screenshot Page 1"
+                    />
+                    <img
+                        src="assets/images/lego/Lego-2.JPG"
+                        alt="Dashboard Screenshot Page 2"
+                    />
+                </div>
+
+                <!-- Buttons -->
+                <div class="buttons-container">
+                    <a
+                        href="https://app.powerbi.com/reportEmbed?reportId=3c95d1ff-84d5-424e-9622-0e1b0f168efc&autoAuth=true&ctid=10ad09bc-5660-4dc7-82c1-2c8ab0f292b0"
+                        target="_blank"
+                        class="btn"
+                        >Open in Power BI</a
+                    >
+                    <a href="index.html#projects" class="btn"
+                        >Back to Projects</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Sticky Buttons Visibility Control Script
+            document.addEventListener("scroll", function () {
+                const stickyButtons = document.querySelector(".sticky-buttons");
+
+                if (window.scrollY > 200) {
+                    stickyButtons.classList.add("visible"); // Show buttons when scrolled down
+                } else {
+                    stickyButtons.classList.remove("visible"); // Hide buttons when at top
+                }
+            });
+        </script>
+    </body>
+</html>
