@@ -72,7 +72,6 @@ section {
 
 .hero .hero-content {
     max-width: 600px; /* Optional: Limit text width */
-    white-space: nowrap; /* Prevent the text from wrapping */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -81,12 +80,12 @@ section {
 .hero h1 {
     font-size: 3em;
     margin: 0;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .hero p {
     font-size: 1.2em;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 /* Enable smooth scrolling */
@@ -518,35 +517,42 @@ footer p {
 
     /* Hero Section */
     .hero {
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-        text-align: center;
-        word-wrap: break-word; /* Ensure words break and wrap correctly */
+        background-image: none; /* Remove the background image */
+        background-color: #212629; /* Replace with a solid color */
+        padding-right: 20px; /* Less padding on smaller screens */
+        text-align: right; /* Center the text on smaller screens */
     }
 
     .hero h1 {
-        font-size: 5vw; /* Adjust heading size */
-        margin-bottom: 10px;
-        word-wrap: break-word; /* Ensure long words break and wrap */
-        margin: 0 10px; /* Add some margin to avoid text touching the sides */
-        overflow-wrap: break-word; /* Additional support for word wrapping */
+        font-size: 5vw; /* Adjust heading size for smaller screens */
+        margin: 0;
+        white-space: normal; /* Ensure wrapping on small screens */
     }
 
     .hero p {
-        font-size: 4vw; /* Adjust text size */
+        font-size: 4vw; /* Adjust paragraph size for smaller screens */
         line-height: 1.4;
-        margin: 0 20px; /* Add margins to avoid text overflowing */
-        word-wrap: break-word; /* Ensure long words wrap properly */
-        overflow-wrap: break-word; /* Additional support for word wrapping */
+        margin: 0 20px; /* Add some margin to avoid text overflowing */
+        white-space: normal; /* Allow text to wrap */
+        overflow-wrap: break-word; /* Ensure long words break and wrap */
     }
 
     /* About Section */
     .about {
         display: flex;
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center; /* Center-align the content */
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center; /* Center the content horizontally */
         text-align: center; /* Center the text */
+        padding: 20px; /* Add padding for spacing */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    /* Ensure the container stacks vertically for small screens */
+    .container {
+        display: flex;
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center-align content */
+        justify-content: center; /* Center content */
     }
 
     .image-container {
@@ -554,18 +560,27 @@ footer p {
         display: flex;
         justify-content: center; /* Center the image horizontally */
         margin-bottom: 20px; /* Add space below the image */
+        align-items: center; /* Vertically center the image */
+        position: relative;
     }
 
-    .about img {
-        max-width: 80%; /* Resize the image for smaller screens */
-        height: auto; /* Keep the aspect ratio */
+    .profile-image {
+        max-width: 50%; /* Resize the image for smaller screens */
+        height: auto; /* Maintain the aspect ratio */
         display: block; /* Ensure the image is a block-level element */
+        margin-bottom: 20px; /* Add space below the image */
+        object-fit: cover; /* Ensures the image covers the container properly */
+        transition: transform 0.3s ease; /* Optional: Smooth scaling effect */
+    }
+
+    .text-container {
+        width: 100%; /* Ensure the text container takes full width */
+        padding: 0 20px; /* Add padding to avoid text touching the sides */
     }
 
     .about-text {
         font-size: 1.2em; /* Adjust text size for readability */
         line-height: 1.6; /* Maintain proper line spacing */
-        padding: 0 20px; /* Add padding to avoid text touching the sides */
         margin-top: 20px; /* Add space above the text */
     }
 
