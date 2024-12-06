@@ -3,7 +3,43 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Manvel Soghomonyan - Data Analyst Portfolio</title>
+        <title>Manvel Soghomonyan | Data Analyst Portfolio</title>
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="Explore the portfolio of Manvel Soghomonyan, a data analyst
+                    skilled in SQL,Power BI, and Python, featuring key projects like
+                    employee attrition analysis and diabetes research."
+        />
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="Manvel Soghomonyan, Data Analyst, SQL, Power BI, Python, Portfolio,
+                    Employee Attrition Analysis, Diabetes Analysis"
+        />
+        <!-- Author -->
+        <meta name="author" content="Manvel Soghomonyan" />
+
+        <!-- Open Graph Metadata -->
+        <meta
+            property="og:title"
+            content="Manvel Soghomonyan | Data Analyst Portfolio"
+        />
+        <meta
+            property="og:description"
+            content="Showcasing the data analytics portfolio of Manvel Soghomonyan,
+                                                featuring Python, Power BI ad SQL projects."
+        />
+        <meta
+            property="og:image"
+            content="https://manvelsoghomonyan.github.io/data-analytics-portfolio/assets/images/portfolio-thumbnail.jpg"
+        />
+        <meta
+            property="og:url"
+            content="https://manvelsoghomonyan.github.io/data-analytics-portfolio/"
+        />
+        <meta property="og:type" content="website" />
+
         <link rel="stylesheet" href="styles.css" />
         <!-- Link to the CSS file -->
     </head>
@@ -12,8 +48,9 @@
         <nav class="navbar">
             <div class="nav-logo">
                 <a href="#top"><h2>Manvel Soghomonyan</h2></a>
-                <!-- Make the logo a clickable link -->
             </div>
+            <div class="hamburger">☰</div>
+            <!-- Hamburger menu icon -->
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -178,6 +215,15 @@
                         behavior: "smooth",
                     });
                 });
+            });
+        </script>
+
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
+
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active"); /* Show/hide menu */
             });
         </script>
     </body>
