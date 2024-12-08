@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mexico Toys Sales Analysis</title>
+        <!-- Meta Description -->
+        <meta
+            name="description"
+            content="Explore the portfolio of Manvel Soghomonyan, a data analyst skilled in SQL, Power BI, and Python."
+        />
+        <!-- Keywords -->
+        <meta
+            name="keywords"
+            content="Manvel Soghomonyan, Data Analyst, SQL, Power BI, Python, Portfolio, Employee Attrition Analysis, Diabetes Analysis"
+        />
+        <!-- Author -->
+        <meta name="author" content="Manvel Soghomonyan" />
+
+        <!-- Open Graph Metadata -->
+        <meta
+            property="og:title"
+            content="Manvel Soghomonyan | Data Analyst Portfolio"
+        />
+        <meta
+            property="og:description"
+            content="Explore the portfolio of Manvel Soghomonyan, a data analyst skilled in SQL, Power BI, and Python."
+        />
+        <meta
+            property="og:image"
+            content="https://manvelsoghomonyan.github.io/data-analytics-portfolio/assets/images/portfolio-thumbnail.jpg"
+            alt="Data Analytics Portfolio"
+        />
+        <meta
+            property="og:url"
+            content="https://manvelsoghomonyan.github.io/data-analytics-portfolio/"
+        />
+        <meta property="og:type" content="website" />
+
+        <!-- HTML Meta Tags -->
+        <title>Manvel Soghomonyan | Data Analyst Portfolio</title>
+        <meta
+            name="description"
+            content="Explore the portfolio of Manvel Soghomonyan, a data analyst skilled in SQL, Power BI, and Python."
+        />
+        <!-- Facebook Meta Tags -->
+        <meta
+            property="og:url"
+            content="https://manvelsoghomonyan.github.io/data-analytics-portfolio/"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="Manvel Soghomonyan | Data Analyst Portfolio"
+        />
+        <meta
+            property="og:description"
+            content="Explore the portfolio of Manvel Soghomonyan, a data analyst skilled in SQL, Power BI, and Python."
+        />
+        <meta
+            property="og:image"
+            content="https://manvelsoghomonyan.github.io/data-analytics-portfolio/assets/images/portfolio-thumbnail.jpg"
+            alt="Data Analytics Portfolio"
+        />
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="manvelsoghomonyan.github.io" />
+        <meta
+            property="twitter:url"
+            content="https://manvelsoghomonyan.github.io/data-analytics-portfolio/"
+        />
+        <meta
+            name="twitter:title"
+            content="Manvel Soghomonyan | Data Analyst Portfolio"
+        />
+        <meta
+            name="twitter:description"
+            content="Explore the portfolio of Manvel Soghomonyan, a data analyst skilled in SQL, Power BI, and Python."
+        />
+        <meta
+            name="twitter:image"
+            content="https://manvelsoghomonyan.github.io/data-analytics-portfolio/assets/images/portfolio-thumbnail.jpg"
+            alt="Data Analytics Portfolio"
+        />
+        <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html#top"><h2>Manvel Soghomonyan</h2></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+
+                <!--
+                <li>
+                    <a
+                        href="assets/Manvel_Soghomonyan_Resume.pdf"
+                        target="_blank"
+                        >Resume</a
+                    >
+                </li>
+                -->
+
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Project Details Section -->
+        <section id="mexico-toys" class="project-page">
+            <div class="project-details">
+                <h2>Mexico Toys Sales Analysis</h2>
+                <p>
+                    This Power BI report provides a comprehensive analysis of
+                    sales performance, featuring dynamic simulations and growth
+                    metrics. It includes a What-If Parameter to model potential
+                    changes in sales and costs, and Month-over-Month (MoM)
+                    Growth calculations to track trends in revenue and
+                    profitability. With interactive filters, custom tooltips,
+                    and visually engaging charts, this report offers valuable
+                    insights into product, store, and category performance,
+                    showcasing advanced data visualization and analytics skills.
+                    Perfect for understanding business trends and making
+                    data-driven decisions.
+                </p>
+
+                <!-- Screenshot Gallery -->
+                <div class="screenshot-gallery">
+                    <img
+                        src="assets/images/mexico-toys/mexico-1.JPG"
+                        alt="Dashboard Screenshot Page 1"
+                    />
+                    <img
+                        src="assets/images/mexico-toys/mexico-2.JPG"
+                        alt="Dashboard Screenshot Page 2"
+                    />
+                    <img
+                        src="assets/images/mexico-toys/mexico-3.JPG"
+                        alt="Dashboard Screenshot Page 3"
+                    />
+                    <img
+                        src="assets/images/mexico-toys/mexico-4.JPG"
+                        alt="Dashboard Screenshot Page 4"
+                    />
+                    <img
+                        src="assets/images/mexico-toys/mexico-5.JPG"
+                        alt="Dashboard Screenshot Page 5"
+                    />
+                </div>
+
+                <!-- Buttons -->
+                <div class="buttons-container">
+                    <a
+                        href="https://app.powerbi.com/reportEmbed?reportId=6ae95a95-6bfa-46c0-b7d3-b71d3ca65e1a&autoAuth=true&ctid=10ad09bc-5660-4dc7-82c1-2c8ab0f292b0"
+                        target="_blank"
+                        class="btn"
+                        >Open in Power BI</a
+                    >
+                    <a href="index.html#projects" class="btn"
+                        >Back to Projects</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Sticky Buttons Visibility Control Script
+            document.addEventListener("scroll", function () {
+                const stickyButtons = document.querySelector(".sticky-buttons");
+
+                if (window.scrollY > 200) {
+                    stickyButtons.classList.add("visible"); // Show buttons when scrolled down
+                } else {
+                    stickyButtons.classList.remove("visible"); // Hide buttons when at top
+                }
+            });
+        </script>
+    </body>
+</html>
