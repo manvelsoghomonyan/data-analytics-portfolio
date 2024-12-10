@@ -177,12 +177,12 @@ html {
     text-align: center; /* Center-align the text */
     display: inline-block; /* Ensure proper button alignment */
     padding: 10px 20px; /* Adjust padding for button size */
-    border: 2px solid black; /* Black frame */
+    border: 1px solid black; /* Black frame */
     color: black; /* Black text */
     background-color: transparent; /* Transparent background */
     font-size: 1em; /* Keep the font size */
     font-weight: bold; /* Bold text for emphasis */
-    border-radius: 5px; /* Rounded corners for a clean look */
+    border-radius: 1px; /* Rounded corners for a clean look */
     transition: border-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
