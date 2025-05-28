@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>iGaming Analytics: Player Behavior, Revenue, and Trends</title>
+        <title>CRM Intelligence & Monitoring Dashboard</title>
         <!-- Meta Description -->
         <meta
             name="description"
@@ -110,211 +110,169 @@
         </nav>
 
         <!-- Project Details Section -->
-        <section id="igaming" class="project-page">
+        <section id="crm-monitoring" class="project-page">
             <div class="project-details">
                 <div>
-                    <h2>
-                        iGaming Analytics: Player Behavior, Revenue, and Trends
-                    </h2>
+                    <h2>CRM Intelligence & Monitoring Dashboard</h2>
                     <!-- Project Summary -->
                     <p><strong>Project Overview</strong></p>
                     <p>
-                        This project showcases a comprehensive data analytics
-                        solution built for the iGaming (online gaming) industry.
-                        The objective was to analyze player behavior, track
-                        revenue, and identify trends in online gaming through
-                        the use of advanced SQL querying and interactive data
-                        visualization in Power BI. The project is designed to
-                        offer insights into key aspects of player behavior,
-                        betting patterns, revenue generation, and trends,
-                        enabling data-driven decision-making for iGaming
-                        platforms.
+                        This project delivers a fully interactive CRM analytics
+                        dashboard designed for a simulated iGaming company. It
+                        provides a 360° view of campaign effectiveness, user
+                        engagement, A/B testing outcomes, alert monitoring, and
+                        behavioral insights through the user journey. The report
+                        enables data-driven decision-making by uncovering
+                        trends, conversion bottlenecks, and user segmentation
+                        across marketing initiatives.
                     </p>
                     <p><strong>Project Goals</strong></p>
                     <ul>
                         <li>
-                            <strong>Analyze Player Behavior:</strong> Gain
-                            insights into players' activities, including their
-                            frequency of play, bet amounts, wins, and engagement
-                            with promotions.
+                            <strong>Campaign Analysis:</strong> Measure the
+                            reach, engagement, and conversion performance of CRM
+                            campaigns.
                         </li>
                         <li>
-                            <strong>Revenue Insights:</strong> Track revenue
-                            streams based on bet amounts, wins, and player
-                            engagement. The analysis aims to identify patterns
-                            in profitability, including player segments that
-                            contribute significantly to revenue.
+                            <strong>Funnel Optimization:</strong> Identify
+                            drop-off points in the user journey from delivery to
+                            conversion.
                         </li>
                         <li>
-                            <strong>Trend Analysis:</strong> Identify trends in
-                            player activity, revenue over time, and game
-                            preferences. Visualize seasonal or cyclical patterns
-                            in player engagement.
+                            <strong>A/B Testing:</strong> Compare control and
+                            test group performance with mock statistical
+                            significance.
+                        </li>
+                        <li>
+                            <strong>Monitoring & Alerts:</strong> Analyze
+                            system-generated alerts, their severity, and
+                            temporal trends.
+                        </li>
+                        <li>
+                            <strong>Session Behavior:</strong> Track user
+                            interaction with the platform via events and session
+                            metrics.
+                        </li>
+                        <li>
+                            <strong>Executive Reporting:</strong> Provide
+                            high-level KPIs and summaries for quick stakeholder
+                            insight.
                         </li>
                     </ul>
                     <p><strong>Data Model</strong></p>
                     <ul>
                         <li>
-                            <strong>Players:</strong> Stores information about
-                            players including their demographics, VIP status,
-                            and account status.
+                            <strong>Users:</strong> Demographics and preferences
                         </li>
                         <li>
-                            <strong>Bets:</strong> Contains data about each bet
-                            placed by players, including bet amounts, win
-                            amounts, and associated games.
+                            <strong>Campaigns:</strong> CRM campaign metadata
                         </li>
                         <li>
-                            <strong>Games:</strong> Describes the games
-                            available on the platform, such as Blackjack, Poker,
-                            and Roulette.
+                            <strong>A/B Tests:</strong> Test/control group
+                            assignments
                         </li>
                         <li>
-                            <strong>Transactions:</strong> Tracks financial
-                            transactions such as deposits, withdrawals, and
-                            winnings payouts.
+                            <strong>Deposits: </strong> Transaction data linked
+                            to campaigns
                         </li>
                         <li>
-                            <strong>Promotions:</strong> Details promotions and
-                            rewards available to players, including start and
-                            end dates, and redemption behavior.
+                            <strong>Monitoring Logs & Alerts:</strong> System
+                            alerts by type and reason
                         </li>
                         <li>
-                            <strong>Sessions:</strong> Tracks player sessions on
-                            games and their duration.
+                            <strong>Sessions & Event Tracking:</strong> User
+                            behavior during site visits
                         </li>
                         <li>
-                            <strong>Game Providers and Types: </strong>
-                            Information on the game providers and types used on
-                            the platform.
+                            <strong>Feedback:</strong>Ratings and text feedback
+                        </li>
+                        <li>
+                            <strong>Campaign Costs:</strong>Budget tracking and
+                            ROI estimation
                         </li>
                     </ul>
 
                     <p><strong>Tools and Technologies</strong></p>
                     <ul>
                         <li>
-                            <strong>SQL Server:</strong> Used to create the
-                            relational database, store the data, and perform
-                            advanced data analytics with SQL queries.
+                            <strong>Python (Pandas & NumPy):</strong> Created
+                            synthetic data to simulate real-world CRM scenarios.
                         </li>
                         <li>
-                            <strong>Power BI:</strong> Leveraged to create
-                            interactive dashboards and visualizations that
-                            display key performance metrics such as player
-                            behavior, revenue, trends, and more.
+                            <strong>Power BI Desktop:</strong> Data modeling,
+                            DAX measures, and interactive visualizations.
                         </li>
                         <li>
-                            <strong>Python:</strong> Used for generating
-                            synthetic data for the project, simulating realistic
-                            player and transaction behaviors.
+                            <strong>DAX:</strong> Defined KPIs and calculated
+                            measures
+                        </li>
+                        <li>
+                            <strong>Power Query (M):</strong> Data
+                            transformation and preprocessings
                         </li>
                     </ul>
 
                     <p><strong>Data Preparation</strong></p>
-                    <p>1.Database Design:</p>
                     <ul>
                         <li>
-                            Designed the database schema for the iGaming
-                            platform, ensuring it reflects the various entities
-                            and their relationships.
+                            Created synthetic datasets representing 90,000
+                            users, 55+ CRM campaigns, thousands of events,
+                            sessions, deposits, feedback entries, and alert logs
                         </li>
                         <li>
-                            Populated the database with realistic data to
-                            simulate real-world scenarios, including generating
-                            10,000 player records, 100,000 bets, 200,000
-                            transactions, and more.
-                        </li>
-                    </ul>
-                    <p>2.SQL Analytics:</p>
-                    <ul>
-                        <li>
-                            Conducted exploratory data analysis (EDA) using SQL
-                            queries to gain insights into player behavior, such
-                            as bet amounts, win amounts, and player frequency.
+                            Each funnel stage (Delivered → Opened → Clicked →
+                            Converted → Deposited) was generated per campaign
+                            with realistic drop-off logic.
                         </li>
                         <li>
-                            Created detailed reports that show the relationships
-                            between player activity, revenue generation, and
-                            session behavior.
-                        </li>
-                    </ul>
-                    <p>3.Key Metrics:</p>
-                    <ul>
-                        <li>
-                            Total revenue and profit across all players and
-                            games.
+                            Session and behavioral data were assigned based on
+                            engagement logic tied to campaign interaction.
                         </li>
                         <li>
-                            Player segmentation (high-volume bettors vs regular
-                            players)
+                            Campaign-specific A/B test groups, user feedback,
+                            and alerts were also constructed to support
+                            cross-sectional analysis and executive summaries
                         </li>
-                        <li>Engagement with promotions.</li>
-                        <li>Win/Loss ratios by game type.</li>
                     </ul>
 
-                    <p><strong>SQL Queries and Insights</strong></p>
-                    <!-- Markdown Button -->
-                    <div class="buttons-container">
-                        <a
-                            href="https://github.com/manvelsoghomonyan/iGaming/blob/main/iGaming_Analytics.md"
-                            target="_blank"
-                            class="btn"
-                            >Open Markdown Document for SQL Analysis details</a
-                        >
-                    </div>
-
-                    <p><strong>Power BI Report</strong></p>
-                    <p>
-                        The Power BI report, titled "iGaming Analytics: Player
-                        Behavior, Revenue, and Trends", is designed to provide a
-                        comprehensive and interactive dashboard that presents
-                        the following insights:
-                    </p>
+                    <p><strong>Visualization:</strong></p>
 
                     <!-- Screenshot Gallery -->
                     <div class="screenshot-gallery">
                         <img
-                            src="assets/images/igaming/igaming-1.JPG"
+                            src="assets/images/crm-monitoring/crm-1.JPG"
                             alt="Dashboard Screenshot Page 1"
                         />
                         <img
-                            src="assets/images/igaming/igaming-2.JPG"
+                            src="assets/images/crm-monitoring/crm-2.JPG"
                             alt="Dashboard Screenshot Page 2"
                         />
                         <img
-                            src="assets/images/igaming/igaming-3.JPG"
+                            src="assets/images/crm-monitoring/crm-3.JPG"
                             alt="Dashboard Screenshot Page 3"
                         />
                         <img
-                            src="assets/images/igaming/igaming-4.JPG"
+                            src="assets/images/crm-monitoring/crm-4.JPG"
                             alt="Dashboard Screenshot Page 4"
                         />
                         <img
-                            src="assets/images/igaming/igaming-5.JPG"
+                            src="assets/images/crm-monitoring/crm-5.JPG"
                             alt="Dashboard Screenshot Page 5"
                         />
                         <img
-                            src="assets/images/igaming/igaming-6.JPG"
+                            src="assets/images/crm-monitoring/crm-6.JPG"
                             alt="Dashboard Screenshot Page 6"
                         />
                         <img
-                            src="assets/images/igaming/igaming-7.JPG"
+                            src="assets/images/crm-monitoring/crm-7.JPG"
                             alt="Dashboard Screenshot Page 7"
-                        />
-                        <img
-                            src="assets/images/igaming/igaming-8.JPG"
-                            alt="Dashboard Screenshot Page 8"
-                        />
-                        <img
-                            src="assets/images/igaming/igaming-9.JPG"
-                            alt="Dashboard Screenshot Page 9"
                         />
                     </div>
 
                     <!-- Buttons -->
                     <div class="buttons-container">
                         <a
-                            href="https://app.powerbi.com/reportEmbed?reportId=0e547bfd-2cca-4561-a0eb-e88140c5f50c&autoAuth=true&ctid=25ce0261-bbd6-49cd-a1e2-54260886d159"
+                            href="https://app.powerbi.com/reportEmbed?reportId=da502e6b-9d1a-4f92-b2d9-dddd0ad1f20d&autoAuth=true&ctid=25ce0261-bbd6-49cd-a1e2-54260886d159"
                             target="_blank"
                             class="btn"
                             >Open in Power BI</a
