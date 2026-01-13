@@ -321,6 +321,7 @@ a:hover {
 .contact-text p {
     font-size: 1.2em;
     white-space: normal;
+    color: white;
 }
 
 /* Contact Icons */
