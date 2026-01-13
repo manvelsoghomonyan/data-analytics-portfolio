@@ -104,6 +104,14 @@ section {
     white-space: normal;
 }
 
+/* Smaller single-line text in Hero section */
+.hero .hero-subline {
+    font-size: 0.95em; /* smaller than <p> */
+    opacity: 0.85; /* slightly softer */
+    margin-top: 6px;
+    white-space: nowrap; /* keep it on one line */
+}
+
 /* Enable smooth scrolling */
 html {
     scroll-behavior: smooth;
@@ -559,6 +567,10 @@ footer p {
         margin: 0 20px; /* Add some margin to avoid text overflowing */
         white-space: normal; /* Allow text to wrap */
         overflow-wrap: break-word; /* Ensure long words break and wrap */
+    }
+
+    .hero .hero-subline {
+        font-size: 0.85em;
     }
 
     /* About Section */
