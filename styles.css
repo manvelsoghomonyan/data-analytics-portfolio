@@ -85,7 +85,7 @@ section {
 }
 
 .hero .hero-content {
-    max-width: 800px; /* Optional: Limit text width */
+    max-width: 600px; /* Optional: Limit text width */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
