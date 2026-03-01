@@ -325,8 +325,8 @@ a:hover {
     color: #555555c7;
 }
 
-.contact-text p {
-    font-size: 1.2em;
+.contact-text {
+    font-size: 1.4em;
     white-space: normal;
     color: rgb(34, 34, 34);
 }
